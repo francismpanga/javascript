@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      img {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <img alt="sorry" id="img" />
+    <script>
+      let img = document.getElementById("img");
+      let images = ["img1.JPG", "img2.JPG", "img3.JPG", "img4.JPG"];
+      let index = 1;
+      function nextimage() {
+        // index++;
+        // img.src = images[index];
+        // console.log(img.src);
+        // if (index >= images.length) {
+        //   index = 0;
+        // }
+        img.src = images[index]; // Update the image source with the current index
+        index++;
+        if (index >= images.length) {
+          index = 0;
+        }
+        console.log(img.src);
+        // setTimeout(nextimage, 1000);
+        // setTimeout(nextimage() {console.log(index)}, index * 2000);
+
+        // for (let index = 0; index < images.length; index++) {
+        //   img.src = images[index];
+        //   console.log(img.src);
+        //   setInterval(nextimage(), 2000);
+        // }
+      }
+      console.log(img.src);
+      setInterval(nextimage, 1000);
+    </script>
+  </body>
+</html>

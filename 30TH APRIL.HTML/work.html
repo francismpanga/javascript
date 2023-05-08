@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="" alt="SORRY" name="slide" />
+    <script>
+      var i = 0; // Start Point
+      var images = []; // Images Array
+      var time = 3000; // Time Between Switch
+
+      // Image List
+      images[0] = "img1.JPG";
+      images[1] = "img2.JPG";
+      images[2] = "img3.JPG";
+      images[3] = "img4.JPG";
+
+      // Change Image
+      function changeImg() {
+        document.slide.src = images[i];
+
+        // Check If Index Is Under Max
+        if (i < images.length - 1) {
+          // Add 1 to Index
+          i++;
+        } else {
+          // Reset Back To O
+          i = 0;
+        }
+
+        // Run function every x seconds
+        setTimeout("changeImg()", time);
+      }
+
+      // Run function when page loads
+      window.onload = changeImg;
+    </script>
+  </body>
+</html>

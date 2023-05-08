@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 600px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img alt="SORRYee" id="img" />
+    <script>
+      let images = ["img2.JPG", "img3.JPG", "img4.JPG"];
+      let img = document.getElementById("img");
+      let index = 1;
+      function nextimg() {
+        img.src = images[index];
+        index++;
+
+        if (index >= images.length) {
+          index = 0;
+        }
+
+        console.log(img.src);
+        setTimeout("nextimg()", 1000);
+      }
+      setInterval(nextimg(), 1000);
+    </script>
+  </body>
+</html>

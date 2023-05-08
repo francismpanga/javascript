@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img1.png" alt="SORRY" id="img" name="img" />
+    <script>
+      let images = ["img1.png", "img2.JPG", "img3.JPG", "img4.JPG"];
+      let img = document.getElementById("img");
+      let index = 0;
+      function nextimg() {
+        index++;
+        img.src = images[index];
+        console.log(index);
+        if (index >= images.length - 1) {
+          index = 0;
+        }
+        console.log(images[index]);
+      }
+      setInterval(nextimg, 5000);
+    </script>
+  </body>
+</html>

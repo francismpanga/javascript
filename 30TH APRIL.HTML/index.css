@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: aqua;
+}
+img {
+  width: 500px;
+}

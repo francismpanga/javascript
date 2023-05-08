@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+
+#task {
+    padding: 20px;
+    margin: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    list-style: none;
+  }
+  #task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #taskwrite {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+  }
+  #addtask {
+    padding: 10px;
+    margin: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+  }

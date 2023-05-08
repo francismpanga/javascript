@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="section"></div>
+    <script>
+      let section = document.getElementById("section");
+      let inputvalue = prompt("What is your grade");
+      switch (inputvalue) {
+        case "A":
+          section.textContent = "Excellent";
+          break;
+        case "B":
+          section.textContent = "Very Good";
+          break;
+        case "C":
+          section.textContent = "Good";
+          break;
+        case "D":
+          section.textContent = "Fair";
+          break;
+        case "E":
+          section.textContent = "Poor";
+          break;
+        case "F":
+          section.textContent = "Fail";
+          break;
+        default:
+          section.textContent = "Never Sat Exams or malpractice";
+          break;
+      }
+    </script>
+  </body>
+</html>

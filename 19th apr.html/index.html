@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        box-sizing: border-box;
+      }
+      button {
+        color: white;
+        font-size: 1.2rem;
+        background-color: rgb(70, 173, 70);
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+      }
+      img {
+        width: 280px;
+        height: 200px;
+        object-position: center;
+      }
+      .items {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+      }
+      .items {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+      }
+      .button {
+        width: 85vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      a {
+        box-sizing: border-box;
+        padding: 5px;
+      }
+      p {
+        color: rgb(44, 173, 44);
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button">
+      <div class="empty"></div>
+      <div class="button1">
+        <button id="button">ADD TO CART</button>
+        <p id="save">Item no. <span id="item">0</span></p>
+      </div>
+    </div>
+    <div class="items">
+      <a href="#" onclick="add()"><img src="1673778789984.jpg" alt="" /></a>
+      <a href="#" onclick="add()"><img src="1673778789984.jpg" alt="" /></a>
+      <a href="#" onclick="add()"><img src="1673778789984.jpg" alt="" /></a>
+      <a href="#" onclick="add()"><img src="1673778789984.jpg" alt="" /></a>
+      <a href="#" onclick="add()"><img src="1673778789984.jpg" alt="" /></a>
+      <a href="#" onclick="add()"><img src="1673778789984.jpg" alt="" /></a>
+      <a href="#" onclick="add()"><img src="1673778789984.jpg" alt="" /></a>
+      <a href="#" onclick="add()"><img src="1673778789984.jpg" alt="" /></a>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  width: 100vw;
+}
+.img {
+  width: 800px;
+  background-color: aqua;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+#container {
+  width: 90vw;
+  margin: auto;
+}
+#container {
+  /* display: grid;
+    grid-template-columns: 5vw, 80vw, 5vw; */
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background-color: red;
+  color: white;
+  height: 70px;
+  width: 40px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 30px;
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.img1 {
+  display: none;
+}
